@@ -34,5 +34,5 @@ class Event < ApplicationRecord
   def is_in_future?
     self.start_date  >=  Date.today
   end
-  
+
 end
