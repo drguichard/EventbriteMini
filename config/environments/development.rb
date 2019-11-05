@@ -1,8 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   
-  config.action_mailer.delivery_method = :letter_opener
-  config.action_mailer.perform_deliveries = true
+  #LETTER OPENER
+  #config.action_mailer.delivery_method = :letter_opener
+  #config.action_mailer.perform_deliveries = true
   
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
@@ -61,4 +62,8 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  #Grâce à ça, quand tu cliqueras sur "réinitialiser mon mot de passe" pour la tester, l'application ne plantera pas. Maintenant tout est réglé pour utiliser Devise. Super !
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
 end
