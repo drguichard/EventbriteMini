@@ -71,6 +71,7 @@ group :development do
 end
 
 gem 'devise'
+gem 'faker'
 
 
 group :development, :test do
