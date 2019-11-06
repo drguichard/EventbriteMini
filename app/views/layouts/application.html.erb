@@ -45,10 +45,10 @@
               <%else%>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Se connecter
+                      Mon profil
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Mon profil</a>
+                    <a class="dropdown-item" <%= link_to "Voir mon profil", users_show_path, method: :get %></a>></a>
                     <a class="dropdown-item" <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete %></a>
                 </div>
               </li>
