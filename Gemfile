@@ -71,8 +71,6 @@ group :development do
 end
 
 gem 'devise'
-gem 'faker'
-
 
 group :development, :test do
   gem 'sqlite3'
@@ -80,3 +78,5 @@ end
 group :production do
   gem 'pg', '>= 0.18'
 end
+
+gem 'faker'
