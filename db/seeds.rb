@@ -18,7 +18,6 @@ User.create(
 	password:"password"
 )
 puts 'User created'
-
 30.times do
 	Event.create(
 		start_date: Faker::Date.forward(days: 365),
