@@ -1,0 +1,26 @@
+<div class="card m-4 p-3 align-items-center" style="width: auto" >
+        <div class="card-body">
+          <div class="row align-items-between">
+            <<div class="col-4 mr-5">
+              <h5 class="card-title"><%=@event.title%></h5>
+              <p class="card-text"><%=@event.description%></p>
+
+            </div>-->
+            <div class="col-4 ml-5">
+              <div class="card">
+                <div class="card-header bg-secondary text-center text-light">
+                  Infos pratiques
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Lieu : <%=@event.location%></li>
+                  <li class="list-group-item">Date : <%=@event.start_date.to_date%></li>
+                  <li class="list-group-item">Durée : <%=@event.duration%> minutes</li>
+                  <li class="list-group-item">Prix : <%=@event.price%> euros </li>
+                  <a class="btn btn-primary" <%= link_to "Participer", event_path(@event.id)%>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
